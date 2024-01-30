@@ -8,6 +8,14 @@
     src: url('../fonts/Roboto-LightItalic.ttf');
   }
 
+@media only screen and (max-width: 600px) {
+    
+    .headerLinks {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
