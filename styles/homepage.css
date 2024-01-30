@@ -29,6 +29,11 @@ header {
     align-items: center;
 }
 
+.headerLogo img {
+    width: 160px;
+    height: auto;
+}
+
 .headerLinks {
     display: flex;
     justify-content: space-between;
