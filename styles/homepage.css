@@ -10,12 +10,6 @@
 
 @media only screen and (max-width: 600px) {
     
-    .headerLinks {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
     .hero {
         display: flex;
         flex-direction: column;
@@ -56,30 +50,77 @@ header {
     justify-content: space-around;
     background-color: #1F2937;
 }
-
+  
 .headerLogo {
     font-size: 24px;
     color: #F9FAF8;
     display: flex;
-    align-items: center;
+    align-items: left;
+    justify-content: flex-start;
 }
-
+  
 .headerLogo img {
     width: 160px;
     height: auto;
 }
-
+  
 .headerLinks {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-width: 40%;
 }
-
+  
 header a {
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
+}
+  
+@media (max-width: 900px) {
+    header {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .headerLogo {
+        order: 1;
+        padding-left: 5%;
+      }
+  
+    .headerLinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1F2937;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    header a {
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+  
+    header::before {
+        content: '\2630';
+        font-size: 24px;
+        color: #E5E7EB;
+        cursor: pointer;
+        order: 2;
+        padding-right: 10%; 
+    }
+  
+    header:hover .headerLinks {
+        display: flex;
+    }
 }
 
 main {
