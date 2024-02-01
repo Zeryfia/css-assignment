@@ -89,6 +89,7 @@ header a {
     .headerLogo {
         order: 1;
         padding-left: 5%;
+        text-align: left;
     }
 
     .headerLinks {
@@ -321,7 +322,8 @@ footer {
     background-color: #1F2937;
     color: #E5E7EB;
     text-align: center;
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     bottom: 0;
     width: 100%;
 }
