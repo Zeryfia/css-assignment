@@ -141,7 +141,7 @@ main {
 
 h1 {
     text-align: center;
-    padding-top: 15px;
+   padding-top: 15px;
 }
 
 summary {
@@ -176,10 +176,6 @@ summary:hover {
     align-items: center;
 }
 
-.frame {
-    display: inline;
-    height: auto;
-}
 
 .initial {
     margin-left: 12%;
@@ -203,18 +199,19 @@ summary:hover {
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
-    margin-top: -15px;
 }
 
 .extra img {
-    width: 500px;
+    width: 30%;
     height: auto;
+    border-radius: 2%;
 }
 
 .extra p {
-    margin-top: 15px;
+    margin-top: 40px;
     width: 40%;
 }
+
 
 footer {
     background-color: #1F2937;
