@@ -24,6 +24,7 @@ main {
 
 main {
     margin-top: 20px;
+
 }
   
 section {
@@ -43,6 +44,11 @@ form {
     flex-direction: column;
     gap: 10px;
 }
+
+.upper-section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
   
 label {
     font-weight: bold;
@@ -50,7 +56,8 @@ label {
 }
 
 #name, #email {
-    width: 50%;
+    width: 545px;
+    padding-right: 10%;
 }
 
 input, textarea {
@@ -99,6 +106,8 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .bot {
@@ -153,8 +162,8 @@ button:hover {
     color: #747272;
 }
 
-@media (max-width: 600px) {
-    header, main {
+@media (max-width: 735px) {
+    header, main, .upper-section, .bottom-section {
       padding: 10px;
     }
 
@@ -162,8 +171,13 @@ button:hover {
         flex-direction: column;
     }
 
+
     section, .bot, #name, #email, button {
         width: 100%;
+    }
+
+    #message {
+        min-width: none;
     }
 }
 
