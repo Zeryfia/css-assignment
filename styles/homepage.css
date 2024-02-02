@@ -270,7 +270,6 @@ main {
 .square {
     width: 100%;
     height: 50%;
-    border: 3px solid #3b82f6;
     border-radius: 10px;
 }
 
