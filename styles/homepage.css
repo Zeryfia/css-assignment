@@ -78,11 +78,21 @@ header a {
     text-decoration: none;
 }
 
+
+#menuIcon {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
 @media (max-width: 900px) {
     header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 10px;
     }
 
     .headerLogo {
@@ -97,32 +107,31 @@ header a {
         justify-content: center;
         position: absolute;
         top: 60px;
-        right: 0;
-        background-color: #1F2937;
-        width: 25%;
+        right: 15%;
+        min-width: 200px;
+        background-color: #2a343f;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     header a {
         margin-top: 10px;
         display: block;
-        width: 100%;
         text-align: left;
     }
 
-    header::before {
-        content: '\2630';
+    #menuIcon {
+        display: block;
         font-size: 24px;
         color: #E5E7EB;
         cursor: pointer;
         order: 2;
         padding-right: 10%;
     }
-
-    header:hover .headerLinks {
+    
+    #menuCheckbox:checked + header #menuIcon + .headerLinks {
         display: flex;
     }
-}
+}    
 
 main {
     width: 100%;

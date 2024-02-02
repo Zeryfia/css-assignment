@@ -222,12 +222,6 @@ footer {
 
 @media only screen and (max-width: 700px) {
     
-    .headerLinks {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
     .hero {
         width: 100%;
         height: 320px;
@@ -322,3 +316,58 @@ footer {
         height: 250px;
     }
 }
+
+
+#menuIcon {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .headerLogo {
+        order: 1;
+        padding-left: 5%;
+    }
+
+    .headerLinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 60px;
+        right: 15%;
+        min-width: 200px;
+        background-color: #2a343f;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header a {
+        margin-top: 10px;
+        display: block;
+        text-align: left;
+    }
+
+    #menuIcon {
+        display: block;
+        font-size: 24px;
+        color: #E5E7EB;
+        cursor: pointer;
+        order: 2;
+        padding-right: 10%;
+    }
+    
+    #menuCheckbox:checked + header #menuIcon + .headerLinks {
+        display: flex;
+    }
+}    
