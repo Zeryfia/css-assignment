@@ -92,7 +92,6 @@ input[type="checkbox"] {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
     }
 
     .headerLogo {
@@ -134,14 +133,15 @@ input[type="checkbox"] {
 }    
 
 main {
-    padding-left: 10px;
+    padding: 5% 10% 10% 10% ;
     background-color: #DCF2F1;
     min-height: 500px;
 }
 
 h1 {
     text-align: center;
-   padding-top: 15px;
+    padding-top: none;
+    padding-bottom: 25px;
 }
 
 summary {
@@ -163,6 +163,10 @@ summary:hover {
     font-weight: normal;
 }
 
+.sign {
+    padding-bottom: 3%;
+}
+
 .circle {
     border-radius: 50%;
     width: 150px;
@@ -170,23 +174,24 @@ summary:hover {
 }
 
 .course {
-    margin-left: 20%;
+    margin-left: 5%;
     display: flex;
     justify-content: start;
     align-items: center;
+    padding-bottom: 5%;
 }
 
 
 .initial {
-    margin-left: 12%;
-    border-radius: 25%;
-    padding-bottom: 5px;
+    border-radius: 8px;
+    padding: 2%;
     font-size: 25px;
     font-weight: bold;
 }
 
 .initial[open] {
     background-color: white;
+    padding: 2%;
 }
 
 .initial[open] + .extra {
@@ -202,7 +207,7 @@ summary:hover {
 }
 
 .extra img {
-    width: 30%;
+    width: 500px;
     height: auto;
     border-radius: 2%;
 }
@@ -210,8 +215,33 @@ summary:hover {
 .extra p {
     margin-top: 40px;
     width: 40%;
+    font-size: 19px;
 }
 
+@media (max-width: 700px) {
+    main {
+        padding: 10px;
+    }
+
+    .course {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+
+    .item {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .extra img {
+        width: 100%;
+    }
+
+    .extra p {
+        width: 100%;
+    }
+}
 
 footer {
     background-color: #1F2937;
