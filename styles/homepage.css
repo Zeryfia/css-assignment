@@ -234,6 +234,18 @@ main {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .quote {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+        width: 80%; /* You can also adjust other styles if needed */
+        padding: 4%;
+    }
+
+    .author {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+    }
+}
+
 .info-section {
     width: 100%;
     display: flex;
