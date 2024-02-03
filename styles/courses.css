@@ -159,7 +159,7 @@ summary:hover {
 
 .item p {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 1.6wv;
     font-weight: normal;
 }
 
@@ -185,7 +185,7 @@ summary:hover {
 .initial {
     border-radius: 8px;
     padding: 2%;
-    font-size: 25px;
+    font-size: 1.7vw;
     font-weight: bold;
 }
 
@@ -229,9 +229,17 @@ summary:hover {
         margin-bottom: 15%;
     }
 
+    .initial {
+        font-size: 4vw;
+    }
+
     .item {
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    .item p {
+        font-size: 3.5vw;
     }
 
     .extra img {
