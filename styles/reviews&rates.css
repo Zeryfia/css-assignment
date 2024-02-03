@@ -219,6 +219,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+    background-color: #f4f4f4;
 }
 
 .reviews-card-head img {
